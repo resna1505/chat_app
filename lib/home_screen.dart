@@ -25,15 +25,15 @@ class _HomeScreenState extends State<HomeScreen> {
     getCurrentUser();
   }
 
-  void getCurrentUser() async {
-    try {
-      final user = await _auth.currentUser;
-      if (user != null) {
-        loggedInUser = user;
-      }
-    } catch (e) {
-      print(e);
+  void getCurrentUser() {
+    // try {
+    final user = _auth.currentUser;
+    if (user != null) {
+      loggedInUser = user;
     }
+    // } catch (e) {
+    //   print(e);
+    // }
   }
 
   Future<Map<String, dynamic>> _fetchChatData(String chatId) async {

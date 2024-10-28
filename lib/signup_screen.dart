@@ -1,6 +1,5 @@
 import 'dart:io';
 
-import 'package:chatapp/auth_provider.dart';
 import 'package:chatapp/home_screen.dart';
 import 'package:chatapp/login_screen.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -9,7 +8,6 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:provider/provider.dart';
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({super.key});
